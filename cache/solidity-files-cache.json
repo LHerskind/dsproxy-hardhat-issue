@@ -1,0 +1,1145 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "D:\\GitHub\\DSProxy\\dsproxy-playground\\contracts\\proxy.sol": {
+      "lastModificationDate": 1610286716965,
+      "contentHash": "4d7d46e3325be72218fe9128d39f2863",
+      "sourceName": "contracts/proxy.sol",
+      "solcConfig": {
+        "version": "0.5.5",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./lib/ds-auth/auth.sol",
+        "./lib/ds-note/note.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0 <0.6.0"
+      ],
+      "artifacts": [
+        "DSProxy",
+        "DSProxyCache",
+        "DSProxyFactory"
+      ]
+    },
+    "D:\\GitHub\\DSProxy\\dsproxy-playground\\contracts\\proxy_fixed.sol": {
+      "lastModificationDate": 1610282302332,
+      "contentHash": "fcfb4023ca8fe45e940faa80ef92ec2e",
+      "sourceName": "contracts/proxy_fixed.sol",
+      "solcConfig": {
+        "version": "0.5.5",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./lib/ds-auth/auth.sol",
+        "./lib/ds-note/note.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0 <0.6.0"
+      ],
+      "artifacts": [
+        "DSProxyCache_fixed",
+        "DSProxyFactory_fixed",
+        "DSProxy_fixed"
+      ]
+    },
+    "D:\\GitHub\\DSProxy\\dsproxy-playground\\contracts\\Greeter.sol": {
+      "lastModificationDate": 1610092572238,
+      "contentHash": "8e4b943890d396929e7d2875c8d47222",
+      "sourceName": "contracts/Greeter.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Greeter"
+      ]
+    },
+    "D:\\GitHub\\DSProxy\\dsproxy-playground\\node_modules\\hardhat\\console.sol": {
+      "lastModificationDate": 1610091698582,
+      "contentHash": "cc4777addd464ea56fa35b1c45df0591",
+      "sourceName": "hardhat/console.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
+      ]
+    },
+    "D:\\GitHub\\DSProxy\\dsproxy-playground\\contracts\\Synthetix.sol": {
+      "lastModificationDate": 1610286277957,
+      "contentHash": "3f89a835f721aefe16785b0f4f2f04fb",
+      "sourceName": "contracts/Synthetix.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./lib/token/ERC20/ERC20.sol",
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Synthetix"
+      ]
+    },
+    "D:\\GitHub\\DSProxy\\dsproxy-playground\\contracts\\lib\\token\\ERC20\\ERC20.sol": {
+      "lastModificationDate": 1610108493219,
+      "contentHash": "2dceef86f24854d66dde7b89e08f3e36",
+      "sourceName": "contracts/lib/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/Context.sol",
+        "./IERC20.sol",
+        "../../math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "D:\\GitHub\\DSProxy\\dsproxy-playground\\contracts\\lib\\utils\\Context.sol": {
+      "lastModificationDate": 1610101626045,
+      "contentHash": "8da707c8f0100469dafd0368d003cca2",
+      "sourceName": "contracts/lib/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "D:\\GitHub\\DSProxy\\dsproxy-playground\\contracts\\lib\\token\\ERC20\\IERC20.sol": {
+      "lastModificationDate": 1610101626024,
+      "contentHash": "117825d0a6693f099bfe764ac5380414",
+      "sourceName": "contracts/lib/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "D:\\GitHub\\DSProxy\\dsproxy-playground\\contracts\\lib\\math\\SafeMath.sol": {
+      "lastModificationDate": 1610101625972,
+      "contentHash": "566b2491fad23ee068a57712059232a5",
+      "sourceName": "contracts/lib/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "D:\\GitHub\\DSProxy\\dsproxy-playground\\contracts\\lib\\token\\ERC20\\ERC20Snapshot.sol": {
+      "lastModificationDate": 1610101626024,
+      "contentHash": "e28e899d134ca9cf1fdca6b509bdddb7",
+      "sourceName": "contracts/lib/token/ERC20/ERC20Snapshot.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../math/SafeMath.sol",
+        "../../utils/Arrays.sol",
+        "../../utils/Counters.sol",
+        "./ERC20.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Snapshot"
+      ]
+    },
+    "D:\\GitHub\\DSProxy\\dsproxy-playground\\contracts\\lib\\utils\\Arrays.sol": {
+      "lastModificationDate": 1610101626044,
+      "contentHash": "769366eaf68ee9359d1dfd0b3122d019",
+      "sourceName": "contracts/lib/utils/Arrays.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../math/Math.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Arrays"
+      ]
+    },
+    "D:\\GitHub\\DSProxy\\dsproxy-playground\\contracts\\lib\\utils\\Counters.sol": {
+      "lastModificationDate": 1610101626046,
+      "contentHash": "7ea7b910f2d8d1c21420877c9ec8b4d1",
+      "sourceName": "contracts/lib/utils/Counters.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Counters"
+      ]
+    },
+    "D:\\GitHub\\DSProxy\\dsproxy-playground\\contracts\\lib\\math\\Math.sol": {
+      "lastModificationDate": 1610101625971,
+      "contentHash": "cff46d5ac93a7223b14fa1f22d51cd43",
+      "sourceName": "contracts/lib/math/Math.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "D:\\GitHub\\DSProxy\\dsproxy-playground\\contracts\\StakerPool.sol": {
+      "lastModificationDate": 1610123775899,
+      "contentHash": "91964b424ebe24f1bc1004a609a9521d",
+      "sourceName": "contracts/StakerPool.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./lib/math/SafeMath.sol",
+        "./lib/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "StakerPool"
+      ]
+    },
+    "D:\\GitHub\\DSProxy\\dsproxy-playground\\contracts\\lib\\token\\ERC20\\SafeERC20.sol": {
+      "lastModificationDate": 1610102601092,
+      "contentHash": "0bd18439908828b851d0137254b6bcc4",
+      "sourceName": "contracts/lib/token/ERC20/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "../../math/SafeMath.sol",
+        "../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "D:\\GitHub\\DSProxy\\dsproxy-playground\\contracts\\lib\\utils\\Address.sol": {
+      "lastModificationDate": 1610101626043,
+      "contentHash": "820f8e45b152ff66db91f0329bb8d440",
+      "sourceName": "contracts/lib/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.2 <0.8.0"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "D:\\GitHub\\DSProxy\\dsproxy-playground\\contracts\\lib\\token\\ERC20\\TokenTimelock.sol": {
+      "lastModificationDate": 1610101626026,
+      "contentHash": "f2b0a0d6cb8d4d5a6fcb5042c7866678",
+      "sourceName": "contracts/lib/token/ERC20/TokenTimelock.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./SafeERC20.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "TokenTimelock"
+      ]
+    },
+    "D:\\GitHub\\DSProxy\\dsproxy-playground\\contracts\\lib\\token\\ERC20\\ERC20Pausable.sol": {
+      "lastModificationDate": 1610101626023,
+      "contentHash": "85c09cea5c3de0e0f69dd5d2caecda6f",
+      "sourceName": "contracts/lib/token/ERC20/ERC20Pausable.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC20.sol",
+        "../../utils/Pausable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Pausable"
+      ]
+    },
+    "D:\\GitHub\\DSProxy\\dsproxy-playground\\contracts\\lib\\utils\\Pausable.sol": {
+      "lastModificationDate": 1610101626049,
+      "contentHash": "7c7711f32e262fec0f00986309d72d5d",
+      "sourceName": "contracts/lib/utils/Pausable.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Context.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Pausable"
+      ]
+    },
+    "D:\\GitHub\\DSProxy\\dsproxy-playground\\contracts\\lib\\token\\ERC20\\ERC20Burnable.sol": {
+      "lastModificationDate": 1610101626022,
+      "contentHash": "2837701eb723c739956a2e3dfa1503be",
+      "sourceName": "contracts/lib/token/ERC20/ERC20Burnable.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/Context.sol",
+        "./ERC20.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Burnable"
+      ]
+    },
+    "D:\\GitHub\\DSProxy\\dsproxy-playground\\contracts\\lib\\token\\ERC20\\ERC20Capped.sol": {
+      "lastModificationDate": 1610101626023,
+      "contentHash": "b1ffb662b5afec2581ef8534fac05fa6",
+      "sourceName": "contracts/lib/token/ERC20/ERC20Capped.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC20.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Capped"
+      ]
+    },
+    "D:\\GitHub\\DSProxy\\dsproxy-playground\\contracts\\lib\\ds-auth\\auth.sol": {
+      "lastModificationDate": 1610092771069,
+      "contentHash": "2e9d03041afdd7fee08f9aa423a04c39",
+      "sourceName": "contracts/lib/ds-auth/auth.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.23"
+      ],
+      "artifacts": [
+        "DSAuth",
+        "DSAuthEvents",
+        "DSAuthority"
+      ]
+    },
+    "D:\\GitHub\\DSProxy\\dsproxy-playground\\contracts\\lib\\ds-note\\note.sol": {
+      "lastModificationDate": 1610092749531,
+      "contentHash": "a96b8e17f92e743db44db5feb3bfb067",
+      "sourceName": "contracts/lib/ds-note/note.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.23"
+      ],
+      "artifacts": [
+        "DSNote"
+      ]
+    },
+    "D:\\GitHub\\DSProxy\\dsproxy-playground\\contracts\\lib\\math\\SignedSafeMath.sol": {
+      "lastModificationDate": 1610101625973,
+      "contentHash": "79f467876fee092d1b4d4d6e8654be50",
+      "sourceName": "contracts/lib/math/SignedSafeMath.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "SignedSafeMath"
+      ]
+    },
+    "D:\\GitHub\\DSProxy\\dsproxy-playground\\contracts\\lib\\utils\\Create2.sol": {
+      "lastModificationDate": 1610101626047,
+      "contentHash": "8bd017b408aa360aa225289ec1b8cae9",
+      "sourceName": "contracts/lib/utils/Create2.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Create2"
+      ]
+    },
+    "D:\\GitHub\\DSProxy\\dsproxy-playground\\contracts\\lib\\utils\\EnumerableMap.sol": {
+      "lastModificationDate": 1610101626047,
+      "contentHash": "5e945066c11f3e50f7cc8ee56ca4f655",
+      "sourceName": "contracts/lib/utils/EnumerableMap.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "EnumerableMap"
+      ]
+    },
+    "D:\\GitHub\\DSProxy\\dsproxy-playground\\contracts\\lib\\utils\\EnumerableSet.sol": {
+      "lastModificationDate": 1610101626048,
+      "contentHash": "26893788e9cab7fae0692c22a9c141cd",
+      "sourceName": "contracts/lib/utils/EnumerableSet.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "EnumerableSet"
+      ]
+    },
+    "D:\\GitHub\\DSProxy\\dsproxy-playground\\contracts\\lib\\utils\\ReentrancyGuard.sol": {
+      "lastModificationDate": 1610101626050,
+      "contentHash": "97c6c125fd066c70d0d59b186f99b9f3",
+      "sourceName": "contracts/lib/utils/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
+      ]
+    },
+    "D:\\GitHub\\DSProxy\\dsproxy-playground\\contracts\\lib\\utils\\SafeCast.sol": {
+      "lastModificationDate": 1610101626050,
+      "contentHash": "a82ec7d712f847356b7df0fc4d896ab4",
+      "sourceName": "contracts/lib/utils/SafeCast.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "SafeCast"
+      ]
+    },
+    "D:\\GitHub\\DSProxy\\dsproxy-playground\\contracts\\lib\\utils\\Strings.sol": {
+      "lastModificationDate": 1610101626051,
+      "contentHash": "1b4db33f18c43c2620fbd2c4e8a85a2e",
+      "sourceName": "contracts/lib/utils/Strings.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Strings"
+      ]
+    },
+    "D:\\GitHub\\DSProxy\\dsproxy-playground\\contracts\\p_ApSt.sol": {
+      "lastModificationDate": 1610280662972,
+      "contentHash": "c2a181b509b7d9f3e7f270f3237b860f",
+      "sourceName": "contracts/p_ApSt.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "MINIERC20",
+        "MINISTAKE",
+        "ProxyApproveStake"
+      ]
+    },
+    "D:\\GitHub\\DSProxy\\dsproxy-playground\\contracts\\p_Rec.sol": {
+      "lastModificationDate": 1610273621918,
+      "contentHash": "27c3bd9c85413a255e2f4b1afc6803b1",
+      "sourceName": "contracts/p_Rec.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "MINIERC20",
+        "ProxyRec"
+      ]
+    }
+  }
+}
