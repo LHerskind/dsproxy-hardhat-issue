@@ -1,25 +1,22 @@
 const { expect } = require("chai");
 const { ethers } = require("hardhat");
 
-describe("DSProxyFactory", function () {
-	it("Proxy factory", async function () {
+describe("DSProxyFactory_pfixed", function () {
+	it("Fixed proxy factory", async function () {
 		const [owner, addr1] = await ethers.getSigners();
 		const DSProxyFactory = await ethers.getContractFactory(
-			"DSProxyFactory",
+			"DSProxyFactory_pfixed",
 			owner
 		);
 		const dsproxyFactory = await DSProxyFactory.deploy();
-        await dsproxyFactory.deployed();
-        
-        //console.log(dsproxyFactory.functions);
-
-		await dsproxyFactory.connect(addr1).build(); // Here we have a culprit
+		await dsproxyFactory.deployed();
+		await dsproxyFactory.connect(addr1).buildMine(); // Here we "fixed" a culprit
 
 		let filter = await dsproxyFactory.filters.Created(addr1.address);
 		let query = await dsproxyFactory.queryFilter(filter);
 		let proxyAddress = query[0]["args"]["proxy"];
 
-		const DSProxy = await ethers.getContractFactory("DSProxy", addr1);
+		const DSProxy = await ethers.getContractFactory("DSProxy_pfixed", addr1);
 		const proxy = await DSProxy.attach(proxyAddress);
 
 		// Setup coin and staking pool
@@ -58,7 +55,7 @@ describe("DSProxyFactory", function () {
 		// let res = await proxy.estimateGas.executeCode(bytecode, calldata);
 		// console.log("Estimated gas usage: ", res.toNumber());
 
-		await proxy.connect(addr1).execute(bytecode, calldata);
+		await proxy.connect(addr1).execute(bytecode, calldata); // Here we "fixed" a culprit
 
 		// res = await proxy.estimateGas.executeCode(bytecode, calldata);
 		// console.log("Estimated gas usage second time: ", res.toNumber());
@@ -77,7 +74,7 @@ describe("DSProxyFactory", function () {
 			100,
 		]);
 
-		await proxy.connect(addr1).executeCode(bytecode, calldata);
+		await proxy.connect(addr1).execute(bytecode, calldata); // Here we "fixed" a culprit
 
 		expect(await snx.balanceOf(proxy.address)).to.equal(0);
 		expect(await pool.balanceOf(proxy.address)).to.equal(0);
@@ -89,20 +86,20 @@ describe("DSProxyFactory", function () {
 		const [owner, addr1] = await ethers.getSigners();
 
 		const DSProxyFactory = await ethers.getContractFactory(
-			"DSProxyFactory",
+			"DSProxyFactory_pfixed",
 			owner
 		);
 
 		const dsproxyFactory = await DSProxyFactory.deploy();
 		await dsproxyFactory.deployed();
-		await dsproxyFactory.connect(addr1).build(); // Here we have a culprit
+		await dsproxyFactory.connect(addr1).buildMine(); // Here we "fixed" a culprit
 
 		let filter = await dsproxyFactory.filters.Created(addr1.address);
 		let query = await dsproxyFactory.queryFilter(filter);
 
 		let proxyAddress = query[0]["args"]["proxy"];
 
-		const DSProxy = await ethers.getContractFactory("DSProxy", addr1);
+		const DSProxy = await ethers.getContractFactory("DSProxy_pfixed", addr1);
 		const proxy = await DSProxy.attach(proxyAddress);
 
 		// Setup coin and staking pool
@@ -115,6 +112,10 @@ describe("DSProxyFactory", function () {
 
 		expect(await snx.balanceOf(addr1.address)).to.equal(9000);
 		expect(await snx.balanceOf(proxy.address)).to.equal(1000);
+
+		//        console.log("SNX: ", snx.address.toLowerCase());
+		//        console.log("Addr1: ", addr1.address.toLowerCase(), "SNX bal: ", (await snx.balanceOf(addr1.address)).toString());
+		//        console.log("Proxy: ", proxy.address.toLowerCase(), "SNX bal: ", (await snx.balanceOf(proxy.address)).toString());
 
 		// Get bytecode and calldata
 		const SCRIPT = await ethers.getContractFactory("ProxyRec");
@@ -132,30 +133,33 @@ describe("DSProxyFactory", function () {
 		//        let res = await proxy.estimateGas.executeCode(bytecode, calldata);
 		//        console.log("Estimated gas usage: ", res.toNumber());
 
-		await proxy.connect(addr1).execute(bytecode, calldata);
+		await proxy.connect(addr1).execute(bytecode, calldata); // Here we "fixed" a culprit
 
 		expect(await snx.balanceOf(addr1.address)).to.equal(9011);
 		expect(await snx.balanceOf(proxy.address)).to.equal(989);
 	});
 
+	// We should be able to make a direct? call should'nt we? No, we would make a delegate directly, and try to execute it in that context?
+	// The nice thing with a proxy is that we have keep approves
+
 	it("Retrieve ETH", async function () {
 		const [owner, addr1] = await ethers.getSigners();
 
 		const DSProxyFactory = await ethers.getContractFactory(
-			"DSProxyFactory",
+			"DSProxyFactory_pfixed",
 			owner
 		);
 
 		const dsproxyFactory = await DSProxyFactory.deploy();
 		await dsproxyFactory.deployed();
-		await dsproxyFactory.connect(addr1).build(); // Here we have a culprit
+		await dsproxyFactory.connect(addr1).buildMine(); // Here we "fixed" a culprit
 
 		let filter = await dsproxyFactory.filters.Created(addr1.address);
 		let query = await dsproxyFactory.queryFilter(filter);
 
 		let proxyAddress = query[0]["args"]["proxy"];
 
-		const DSProxy = await ethers.getContractFactory("DSProxy", addr1);
+		const DSProxy = await ethers.getContractFactory("DSProxy_pfixed", addr1);
 		const proxy = await DSProxy.attach(proxyAddress);
 
 		let value = ethers.utils.parseEther("10");
@@ -173,11 +177,11 @@ describe("DSProxyFactory", function () {
 		//console.log("Bytecode: ", bytecode);
 		//console.log("Calldata: ", calldata);
 
-		await proxy.connect(addr1).execute(bytecode, calldata);
+		await proxy.connect(addr1).execute(bytecode, calldata); // Here we "fixed" a culprit
 
 		expect(await owner.provider.getBalance(proxy.address)).to.equal(0);
 		expect(await owner.provider.getBalance(addr1.address)).to.above(
 			addr1Bal
 		);
-    });
+	});
 });

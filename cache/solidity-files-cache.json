@@ -1140,6 +1140,45 @@
         "MINIERC20",
         "ProxyRec"
       ]
+    },
+    "D:\\GitHub\\DSProxy\\dsproxy-playground\\contracts\\proxy_partfixed.sol": {
+      "lastModificationDate": 1610287832233,
+      "contentHash": "cb7c17ff6946e8b5baa35597867659f5",
+      "sourceName": "contracts/proxy_partfixed.sol",
+      "solcConfig": {
+        "version": "0.5.5",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./lib/ds-auth/auth.sol",
+        "./lib/ds-note/note.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0 <0.6.0"
+      ],
+      "artifacts": [
+        "DSProxyCache_pfixed",
+        "DSProxyFactory_pfixed",
+        "DSProxy_pfixed"
+      ]
     }
   }
 }
